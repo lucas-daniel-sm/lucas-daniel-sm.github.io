@@ -1,0 +1,454 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>CV | Lucas Mendes - Engenheiro de Software</title>
+    <meta name="description" content="Currículo Profissional de Lucas Mendes - Tech Lead e Engenheiro de Software">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/core@1.0.0-beta17/dist/css/tabler.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+    
+    <style>
+      @import url('https://rsms.me/inter/inter.css');
+      :root {
+      	--tblr-font-sans-serif: 'Inter', -apple-system, BlinkMacSystemFont, San Francisco, Segoe UI, Roboto, Helvetica Neue, sans-serif;
+      }
+      body {
+      	font-feature-settings: "cv03", "cv04", "cv11";
+        background-color: #f4f6fa;
+      }
+
+      /* Estilização para Timeline */
+      .timeline-item { margin-bottom: 1.5rem; }
+      
+      /* Ajustes de UI */
+      .avatar-xl {
+        width: 7rem;
+        height: 7rem;
+        font-size: 2.5rem;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      }
+      
+      /* Badge Outline Customizado para ficar mais discreto na timeline */
+      .badge-outline {
+        background: transparent;
+        border: 1px solid #e6e7e9;
+        color: #656d77;
+        margin-right: 4px;
+        margin-bottom: 4px;
+      }
+
+      /* ==========================================================================
+         PRINT STYLES (Otimização para PDF/Impressão)
+         ========================================================================== */
+      @media print {
+        @page { margin: 1cm; size: A4; }
+        body { background-color: white !important; -webkit-print-color-adjust: exact; }
+        
+        /* Esconder elementos de navegação e botões */
+        .navbar, .btn-print-hide, .footer, .d-print-none {
+          display: none !important;
+        }
+
+        /* Ajustes de layout para impressão */
+        .container-xl { max-width: 100% !important; padding: 0 !important; }
+        .page-header { margin-top: 0 !important; margin-bottom: 1rem !important; }
+        .card { border: none !important; box-shadow: none !important; margin-bottom: 1.5rem !important; page-break-inside: avoid; }
+        
+        /* Grid System para impressão (garantir colunas lado a lado) */
+        .row { display: flex; flex-wrap: nowrap; }
+        .col-md-4 { width: 32%; padding-right: 15px; }
+        .col-md-8 { width: 68%; padding-left: 15px; }
+        
+        /* Tipografia de impressão */
+        h1, h2, h3, h4 { color: #000 !important; }
+        .text-muted { color: #444 !important; }
+        .text-secondary { color: #333 !important; }
+        .badge { border: 1px solid #999; color: #000 !important; background: transparent !important; font-weight: bold; }
+        
+        /* Links */
+        a { text-decoration: none !important; color: #000 !important; }
+        a[href^="http"]:after { content: ""; } /* Opção: remover URL visível para manter limpo */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <header class="navbar navbar-expand-md navbar-light d-print-none sticky-top">
+        <div class="container-xl">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-menu">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <h1 class="navbar-brand navbar-brand-autodark d-none-navbar-horizontal pe-0 pe-md-3">
+            <a href=".">lucasmendes.dev</a>
+          </h1>
+          <div class="navbar-nav flex-row order-md-last">
+            <div class="nav-item">
+              <a href="javascript:window.print()" class="btn btn-primary">
+                <i class="ti ti-printer me-2"></i> Salvar PDF
+              </a>
+            </div>
+          </div>
+          <div class="collapse navbar-collapse" id="navbar-menu">
+            <div class="d-flex flex-column flex-md-row flex-fill align-items-stretch align-items-md-center">
+              <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+                <li class="nav-item"><a class="nav-link" href="#skills">Stack</a></li>
+                <li class="nav-item"><a class="nav-link" href="#experiencia">Experiência</a></li>
+                <li class="nav-item"><a class="nav-link" href="#certificados">Certificações</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <div class="page-wrapper">
+        <div class="page-header d-print-none">
+          <div class="container-xl">
+            <div class="row g-2 align-items-center">
+              <div class="col">
+                <h2 class="page-title">Currículo Profissional</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="page-body">
+          <div class="container-xl">
+            <div class="row g-3">
+              
+              <div class="col-md-4">
+                
+                <div class="card mb-3">
+                  <div class="card-body text-center">
+                    <span class="avatar avatar-xl mb-3 rounded" style="background-image: url('https://ui-avatars.com/api/?name=Lucas+Mendes&background=0054a6&color=fff&size=200&font-size=0.33')"></span>
+                    <h3 class="m-0 mb-1">Lucas Mendes</h3>
+                    <div class="text-muted fw-bold">Tech Lead & Engenheiro de Software</div>
+                    <div class="text-muted small mt-1">Full Cycle & R&D Specialist</div>
+                    
+                    <div class="mt-3 d-print-none">
+                      <span class="badge bg-green-lt cursor-pointer" title="Aberto a propostas">Disponível</span>
+                    </div>
+                  </div>
+                  <div class="d-flex d-print-none">
+                    <a href="mailto:contato@lucasmendes.dev" class="card-btn">
+                      <i class="ti ti-mail me-2"></i> Email
+                    </a>
+                    <a href="https://github.com/lucas-daniel-sm" target="_blank" class="card-btn">
+                      <i class="ti ti-brand-github me-2"></i> GitHub
+                    </a>
+                  </div>
+                  <div class="card-footer d-none d-print-block">
+                    <ul class="list-unstyled mb-0 small">
+                      <li><strong>Email:</strong> contato@lucasmendes.dev</li>
+                      <li><strong>GitHub:</strong> github.com/lucas-daniel-sm</li>
+                      <li><strong>Web:</strong> lucasmendes.dev</li>
+                    </ul>
+                  </div>
+                  <div class="card-footer text-muted small">
+                    <ul class="list-unstyled mb-0">
+                      <li class="mb-2"><i class="ti ti-map-pin me-2"></i>Montes Claros, MG</li>
+                      <li><i class="ti ti-id me-2"></i>24 Anos</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="card mb-3" id="skills">
+                  <div class="card-header">
+                    <h3 class="card-title">Stack Tecnológico</h3>
+                  </div>
+                  <div class="card-body">
+                    <div class="mb-3">
+                      <label class="form-label fw-bold mb-1">Backend Core</label>
+                      <div>
+                        <span class="badge bg-azure-lt mb-1">Java 17/21/25</span>
+                        <span class="badge bg-azure-lt mb-1">Spring Boot 3/4</span>
+                        <span class="badge bg-azure-lt mb-1">Spring Security</span>
+                        <span class="badge bg-azure-lt mb-1">JPA / Hibernate</span>
+                        <span class="badge bg-azure-lt mb-1">Kotlin</span>
+                        <span class="badge bg-azure-lt mb-1">Wildfly/JBoss</span>
+                      </div>
+                    </div>
+                    
+                    <div class="mb-3">
+                      <label class="form-label fw-bold mb-1">DevOps & Infra</label>
+                      <div>
+                        <span class="badge bg-orange-lt mb-1">Linux (Debian/Ubuntu)</span>
+                        <span class="badge bg-orange-lt mb-1">Docker</span>
+                        <span class="badge bg-orange-lt mb-1">Nginx</span>
+                        <span class="badge bg-orange-lt mb-1">WSL 2</span>
+                        <span class="badge bg-orange-lt mb-1">Gitflow</span>
+                      </div>
+                    </div>
+
+                    <div class="mb-3">
+                      <label class="form-label fw-bold mb-1">Frontend & Mobile</label>
+                      <div>
+                        <span class="badge bg-purple-lt mb-1">Flutter (Win/Mob)</span>
+                        <span class="badge bg-purple-lt mb-1">Thymeleaf</span>
+                        <span class="badge bg-purple-lt mb-1">JavaFX</span>
+                        <span class="badge bg-purple-lt mb-1">JSF 2.2</span>
+                      </div>
+                    </div>
+                    
+                    <div class="mb-3">
+                      <label class="form-label fw-bold mb-1">Dados & Integração</label>
+                      <div>
+                        <span class="badge bg-teal-lt mb-1">SQL Server/Postgres</span>
+                        <span class="badge bg-teal-lt mb-1">n8n</span>
+                        <span class="badge bg-teal-lt mb-1">Python Scripts</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card mb-3">
+                  <div class="card-header">
+                    <h3 class="card-title">Formação</h3>
+                  </div>
+                  <div class="card-body">
+                    <div class="mb-2">
+                      <div class="fw-bold">Engenharia Mecatrônica</div>
+                      <div class="text-muted small">Bacharelado</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card mb-3">
+                  <div class="card-header">
+                    <h3 class="card-title">Idiomas</h3>
+                  </div>
+                  <div class="card-body">
+                    <div class="mb-1">
+                      <div class="fw-bold">Inglês Técnico</div>
+                      <div class="text-muted small">Leitura Avançada</div>
+                      <div class="text-muted small">Escrita/Fala Intermediária</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card mb-3" id="certificados">
+                  <div class="card-header">
+                    <h3 class="card-title">Certificações</h3>
+                  </div>
+                  <div class="list-group list-group-flush">
+                    
+                    <div class="list-group-item px-3 py-2">
+                      <div class="d-flex justify-content-between align-items-center mb-1">
+                        <span class="fw-bold small">Integração Java JSF 2 + CDI</span>
+                        <span class="badge bg-secondary-lt" style="font-size: 0.6rem;">Mai 2024</span>
+                      </div>
+                      <div class="text-muted small lh-sm">Alura (16h)</div>
+                    </div>
+
+                    <div class="list-group-item px-3 py-2">
+                      <div class="d-flex justify-content-between align-items-center mb-1">
+                        <span class="fw-bold small">Testes Automatizados (Java)</span>
+                        <span class="badge bg-secondary-lt" style="font-size: 0.6rem;">Abr 2024</span>
+                      </div>
+                      <div class="text-muted small lh-sm">Alura - JUnit/Mockito (10h)</div>
+                    </div>
+
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="col-md-8">
+                
+                <div class="card mb-3" id="sobre">
+                  <div class="card-body">
+                    <h2 class="card-title icon-title mb-3">
+                      <i class="ti ti-user-circle me-2"></i> Perfil Profissional
+                    </h2>
+                    <p class="text-secondary text-justify">
+                      Engenheiro Mecatrônico e Tech Lead com <strong>perfil Full Cycle</strong>. Especialista no ecossistema <strong>Java (Spring Boot)</strong>, atuo na liderança técnica de modernização de sistemas, governança de TI e desenvolvimento de arquiteturas de alta performance.
+                    </p>
+                    <p class="text-secondary text-justify mb-0">
+                      Possuo forte autonomia em infraestrutura (Linux, Docker) e desenvolvimento multiplataforma (Web, Desktop e Mobile). Atualmente foco em preencher a lacuna entre sistemas legados críticos e novas tecnologias (Java 25 EA, Cloud Híbrida), garantindo eficiência operacional e qualidade de código.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="card mb-3" id="experiencia">
+                  <div class="card-header">
+                    <h3 class="card-title">
+                      <i class="ti ti-briefcase me-2"></i> Experiência Profissional
+                    </h3>
+                  </div>
+                  <div class="card-body">
+                    <ul class="timeline">
+
+                      <li class="timeline-event">
+                        <div class="timeline-event-icon bg-green-lt"><i class="ti ti-building-arch"></i></div>
+                        <div class="card timeline-event-card">
+                          <div class="card-body">
+                            <div class="float-end text-muted small fw-bold">Ago 2023 – Presente</div>
+                            <h4 class="fw-bold mb-1">Engenheiro de Software / Tech Lead (DAI II)</h4>
+                            <div class="text-primary mb-2">Prefeitura de Montes Claros</div>
+                            
+                            <div class="mb-2">
+                              <span class="badge bg-lime-lt">Promovido a Cargo de Chefia (2025)</span>
+                            </div>
+
+                            <div class="text-secondary">
+                              <p class="mb-2 small">Responsável pela manutenção de sistemas críticos de arrecadação (SEFIN) e modernização da infraestrutura de software municipal.</p>
+                              
+                              <div class="markdown text-muted small mb-3">
+                                <ul class="ps-3 mb-0">
+                                  <li><strong>Liderança & Governança:</strong> Criação de documentação padrão para APIs Spring Boot, implantação de Gitflow e mentoria técnica de estagiários.</li>
+                                  <li><strong>Desenvolvimento:</strong> Evolução de sistema legado (JSF/PrimeFaces) e criação de microsserviços em Spring Boot 3 (Projeto "Regularize", nov/2025).</li>
+                                  <li><strong>Infraestrutura:</strong> Deploy on-premise de serviços de suporte (Mattermost, Brasil API) e tuning de banco de dados.</li>
+                                </ul>
+                              </div>
+                              <div class="d-flex flex-wrap">
+                                <span class="badge badge-outline">Java 21</span>
+                                <span class="badge badge-outline">Spring Boot 3</span>
+                                <span class="badge badge-outline">JSF 2.2</span>
+                                <span class="badge badge-outline">Jasper Reports</span>
+                                <span class="badge badge-outline">Mentoria</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      
+                      <li class="timeline-event">
+                        <div class="timeline-event-icon bg-primary-lt"><i class="ti ti-code"></i></div>
+                        <div class="card timeline-event-card">
+                          <div class="card-body">
+                            <div class="float-end text-muted small fw-bold">Dez 2025 - Atual</div>
+                            <h4 class="fw-bold mb-1">Dev Web Fullstack Freelancer</h4>
+                            <div class="text-primary mb-2">Veacci</div>
+                            <div class="text-secondary">
+                              <p class="mb-2 small">Manutenção e evolução de ecossistema complexo envolvendo Web, Mobile e Infraestrutura de streaming.</p>
+                              <div class="d-flex flex-wrap">
+                                <span class="badge badge-outline">Node.js</span>
+                                <span class="badge badge-outline">Next.js</span>
+                                <span class="badge badge-outline">Kotlin Android</span>
+                                <span class="badge badge-outline">Docker Compose</span>
+                                <span class="badge badge-outline">Linux Server</span>
+                                <span class="badge badge-outline">RTMP/WebRTC</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+
+                      <li class="timeline-event">
+                        <div class="timeline-event-icon bg-purple-lt"><i class="ti ti-device-desktop"></i></div>
+                        <div class="card timeline-event-card">
+                          <div class="card-body">
+                            <div class="float-end text-muted small fw-bold">Jan 2023 – Abr 2023</div>
+                            <h4 class="fw-bold mb-1">Engenheiro de Software (Freelancer)</h4>
+                            <div class="text-primary mb-2">Metabuy</div>
+                            <div class="text-secondary">
+                              <p class="mb-2 small">Desenvolvimento do projeto <strong>MetaTotem</strong>. Integração hardware-software para totens de autoatendimento.</p>
+                              <div class="d-flex flex-wrap">
+                                <span class="badge badge-outline">Flutter Desktop</span>
+                                <span class="badge badge-outline">C++</span>
+                                <span class="badge badge-outline">Linux Systemd</span>
+                                <span class="badge badge-outline">IoT</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+
+                      <li class="timeline-event">
+                        <div class="timeline-event-icon bg-gray-lt"><i class="ti ti-headset"></i></div>
+                        <div class="card timeline-event-card">
+                          <div class="card-body">
+                            <div class="float-end text-muted small fw-bold">Jan 2022 – Presente</div>
+                            <h4 class="fw-bold mb-1">Suporte Especializado (Banco Next)</h4>
+                            <div class="text-primary mb-2">AeC</div>
+                            <div class="text-secondary">
+                              <p class="mb-2 small">Resolução de problemas críticos em operações financeiras digitais. Foco em análise de fraudes e suporte nível 2.</p>
+                              <div class="d-flex flex-wrap">
+                                <span class="badge badge-outline">Resolução de Problemas</span>
+                                <span class="badge badge-outline">Soft Skills</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+
+                      <li class="timeline-event">
+                        <div class="timeline-event-icon bg-azure-lt"><i class="ti ti-coffee"></i></div>
+                        <div class="card timeline-event-card">
+                          <div class="card-body">
+                            <div class="float-end text-muted small fw-bold">Jul 2019 – Jan 2020</div>
+                            <h4 class="fw-bold mb-1">Desenvolvedor Java Fullstack</h4>
+                            <div class="text-primary mb-2">Linda Demais Lingerie</div>
+                            <div class="text-secondary">
+                              <p class="mb-2 small">Criação de ERP customizado (Estoque/Vendas) otimizando o fluxo de caixa da empresa.</p>
+                              <div class="d-flex flex-wrap">
+                                <span class="badge badge-outline">JavaFX</span>
+                                <span class="badge badge-outline">Spring Boot</span>
+                                <span class="badge badge-outline">MySQL</span>
+                                <span class="badge badge-outline">Gradle</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="card mb-3" id="projetos">
+                  <div class="card-header">
+                    <h3 class="card-title">
+                      <i class="ti ti-brand-github me-2"></i> Projetos Open Source & R&D
+                    </h3>
+                  </div>
+                  <div class="list-group list-group-flush">
+                    
+                    <a href="https://github.com/lucas-daniel-sm/hosts_editor" class="list-group-item list-group-item-action" target="_blank">
+                      <div class="d-flex w-100 justify-content-between">
+                        <h4 class="mb-1 text-primary">Hosts Editor (Flutter/Windows)</h4>
+                        <small class="text-muted"><i class="ti ti-external-link"></i></small>
+                      </div>
+                      <p class="mb-1 small text-secondary">Ferramenta gráfica para gerenciamento do arquivo hosts do Windows com permissões elevadas. Demonstração de Flutter Desktop.</p>
+                    </a>
+
+                    <a href="https://github.com/lucas-daniel-sm/Sidwin" class="list-group-item list-group-item-action" target="_blank">
+                      <div class="d-flex w-100 justify-content-between">
+                        <h4 class="mb-1 text-primary">Sidwin (Java/Gradle)</h4>
+                        <small class="text-muted"><i class="ti ti-external-link"></i></small>
+                      </div>
+                      <p class="mb-1 small text-secondary">
+                        Utilitário para localizar e copiar as imagens de destaque do Windows 10/11 (tela de bloqueio). Permite exportar ou definir facilmente como papel de parede.<br>
+                        <span class="text-muted">Requisitos: Windows 10/11, JDK 14+, Gradle 6.3+</span>
+                      </p>
+                    </a>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <footer class="footer footer-transparent d-print-none">
+          <div class="container-xl">
+            <div class="row text-center align-items-center flex-row-reverse">
+              <div class="col-12 col-lg-auto mt-3 mt-lg-0">
+                <ul class="list-inline list-inline-dots mb-0">
+                  <li class="list-inline-item">
+                    &copy; 2025 Lucas Mendes.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/@tabler/core@1.0.0-beta17/dist/js/tabler.min.js"></script>
+  </body>
+</html>
